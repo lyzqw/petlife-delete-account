@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
@@ -7,8 +7,38 @@
     <title>PetLife</title>
     <script type="module" crossorigin src="/assets/index-BlAmLdSz.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BBUsq3Ds.css">
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .delete-btn {
+        padding: 12px 24px;
+        font-size: 16px;
+        color: white;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .delete-btn:hover {
+        background-color: darkred;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <button class="delete-btn" onclick="deleteAccount()">Delete Account</button>
+    </div>
+
+    <script>
+      function deleteAccount() {
+        alert("Account deleted successfully!");
+      }
+    </script>
   </body>
 </html>
